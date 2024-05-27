@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<h1 id="i-coded-a-personal-pipeline-for-pixelwise-registration-of-brain-regions-and-decided-to-package-it-for-broader-use-based-off-of-the-vedo-and-brainrender-frameworks-ive-finished-the-first-tentative-version-of-brainreg3d-this-is-a-python-package-for-the-manual-registration-of-2d-images-over-a-3d-brain-below-is-the-description-as-found-at-httpsgithubcomjoericottabrainreg3dblobmasterdescriptionmd">I coded a personal pipeline for pixelwise registration of brain regions and decided to package it for broader use. Based off of the vedo and brainrender frameworks, I’ve finished the first tentative version of brainreg3D. This is a python package for the manual registration of 2D images over a 3D brain. Below is the description as found at <a href="https://github.com/JoeRicotta/brainreg3D/blob/master/description.md">https://github.com/JoeRicotta/brainreg3D/blob/master/description.md</a>.</h1>
+
+<h1 id="brainreg3d-is-based-off-of-the-vedo-and-brainrender-framework-to-allow-registration-of-a-2d-image-onto-a-3d-brain-it-uses-perspectival-projections-of-the-brain-onto-the-field-of-view-to-map-cortical-regions-to-image-pixels">brainreg3D is based off of the <a href="https://vedo.embl.es">vedo</a> and <a href="https://brainglobe.info/documentation/brainrender/index.html">brainrender</a> framework to allow registration of a 2D image onto a 3D brain. It uses perspectival projections of the brain onto the field of view to map cortical regions to image pixels.</h1>
+
+<h1 id="the-following-images-were-obtained-with-the-below-code">The following images were obtained with the below code:</h1>
+<h1 id="python">```python</h1>
+<h1 id="from-brainreg3d-import-brainreg3d">from brainreg3D import BrainReg3D</h1>
+
+<h1 id="by-specifying-the-image_dims_mm-parameter-we-ensure-the-loaded-image">by specifying the image_dims_mm parameter, we ensure the loaded image</h1>
+<h1 id="is-to-scale">is to scale</h1>
+<h1 id="reg--brainreg3dresourcessample_imagetif-image_dims_mm6254">reg = BrainReg3D(‘./resources/sample_image.tif’, image_dims_mm=[6.25,4])</h1>
+
+<h1 id="if-verbose-intermediate-processing-steps-will-be-plotted-and-shown">if verbose, intermediate processing steps will be plotted and shown</h1>
+<h1 id="regverbose--true">reg.verbose = True</h1>
+
+<h1 id="run-the-pipeline">run the pipeline</h1>
+<h1 id="regrun">reg.run()</h1>
+<h1>```</h1>
+</body></html>
